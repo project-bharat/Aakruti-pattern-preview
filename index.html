@@ -927,39 +927,41 @@ section:not(.hero):not(#services):after{background-color:var(--brand-primary)!im
 </html>
 
 
-<style id="aakruti-pattern-refinement-2">
-/* A softer white motif that sits visually beneath foreground content. */
+
+<style id="aakruti-pattern-refinement-3">
+/* Specifications: undo the later added patterned slate layer; retain the original panel styling. */
+#product-grid .specification-panel:before{content:none!important;display:none!important}
+#product-grid .specification-panel{background-image:none!important}
+/* Hero pattern is stronger and larger, kept behind the foreground content. */
 .hero{isolation:isolate}
-.hero:before{
- z-index:0!important;opacity:.12!important;mix-blend-mode:screen!important;
- -webkit-mask-image:linear-gradient(to bottom,transparent 18%,rgba(0,0,0,.25) 43%,#000 100%);
- mask-image:linear-gradient(to bottom,transparent 18%,rgba(0,0,0,.25) 43%,#000 100%);
-}
+.hero:before{z-index:0!important;opacity:.42!important;background-size:440px auto!important;mix-blend-mode:screen!important;
+ -webkit-mask-image:linear-gradient(to bottom,transparent 8%,rgba(0,0,0,.4) 35%,#000 100%);
+ mask-image:linear-gradient(to bottom,transparent 8%,rgba(0,0,0,.4) 35%,#000 100%)}
 .hero>*{position:relative;z-index:1}
-#product-grid .specification-panel{position:relative;isolation:isolate;background:#525266!important}
-#product-grid .specification-panel:before{
- content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
- background:url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgh-Nq8UCnodQv4H55oE5fJG0NL64r37m8OHCXutDeKN7_6XrDfrd3mWqtSB6opCLw6rfrdS6U6en5dpSq6TJNypieRR_YNDmjBYHTW7X8o2VWdjuw9GrW0O3CF5i2-Dl_QWpCUWFJuNSYCgkkEZUJBWmCUcjKekYi8bFfdppVhtkSylbmdc6JBw1u6Fq4/s1600/1000054791.png') center/155px auto repeat;
- opacity:.13;
-}
-#product-grid .specification-panel .specification-heading,
-#product-grid .specification-panel .specification-details,
-#product-grid .specification-panel .specification-note{position:relative;z-index:1}
-#product-grid .specification-panel .specification-details,
-#product-grid .specification-panel .specification-note{background:rgba(240,235,231,.94)!important}
-#contact-form > .flex.flex-wrap.items-center.justify-center.gap-2.mt-1{
+/* Double the patterned edge width on the service cards and enlarge the motif. */
+#services article{padding-right:52px!important}
+#services article:after{width:44px!important;background-size:190px auto!important;opacity:1!important}
+/* Dark slate heading strip for the enquiry form title and supporting text. */
+#contact-form>h3,#contact-form>h3+p{position:relative;isolation:isolate;z-index:1;margin-left:-1.25rem!important;margin-right:-1.25rem!important;padding:10px 1.25rem!important;background-color:#525266!important}
+#contact-form>h3{margin-top:-1.25rem!important;padding-top:18px!important;padding-bottom:6px!important;border-radius:12px 12px 0 0}
+#contact-form>h3+p{margin-top:-1rem!important;margin-bottom:.35rem!important;padding-top:2px!important;padding-bottom:15px!important;border-bottom:1px solid rgba(255,255,255,.12)}
+#contact-form>h3:before,#contact-form>h3+p:before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+ background:url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgh-Nq8UCnodQv4H55oE5fJG0NL64r37m8OHCXutDeKN7_6XrDfrd3mWqtSB6opCLw6rfrdS6U6en5dpSq6TJNypieRR_YNDmjBYHTW7X8o2VWdjuw9GrW0O3CF5i2-Dl_QWpCUWFJuNSYCgkkEZUJBWmCUcjKekYi8bFfdppVhtkSylbmdc6JBw1u6Fq4/s1600/1000054791.png') center/260px auto repeat;opacity:.36}
+/* Footer strip contains all three contact actions, with button colors matching Submit Enquiry. */
+#contact-form>.flex.flex-wrap.items-center.justify-center.gap-2.mt-1{
  position:relative;isolation:isolate;overflow:hidden;
- margin:1.1rem -1rem -0.2rem!important;padding:15px 12px!important;
- border-radius:0 0 10px 10px;background:#525266!important;
- border-top:1px solid rgba(255,255,255,.14);
-}
-#contact-form > .flex.flex-wrap.items-center.justify-center.gap-2.mt-1:before{
+ margin:1.1rem -1.25rem -1.25rem!important;padding:18px 12px!important;
+ border-radius:0 0 12px 12px;background:#525266!important;border-top:1px solid rgba(255,255,255,.16)}
+#contact-form>.flex.flex-wrap.items-center.justify-center.gap-2.mt-1:before{
  content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
- background:url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgh-Nq8UCnodQv4H55oE5fJG0NL64r37m8OHCXutDeKN7_6XrDfrd3mWqtSB6opCLw6rfrdS6U6en5dpSq6TJNypieRR_YNDmjBYHTW7X8o2VWdjuw9GrW0O3CF5i2-Dl_QWpCUWFJuNSYCgkkEZUJBWmCUcjKekYi8bFfdppVhtkSylbmdc6JBw1u6Fq4/s1600/1000054791.png') center/155px auto repeat;
- opacity:.13;
-}
-#contact-form > .flex.flex-wrap.items-center.justify-center.gap-2.mt-1>*{position:relative;z-index:1}
+ background:url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgh-Nq8UCnodQv4H55oE5fJG0NL64r37m8OHCXutDeKN7_6XrDfrd3mWqtSB6opCLw6rfrdS6U6en5dpSq6TJNypieRR_YNDmjBYHTW7X8o2VWdjuw9GrW0O3CF5i2-Dl_QWpCUWFJuNSYCgkkEZUJBWmCUcjKekYi8bFfdppVhtkSylbmdc6JBw1u6Fq4/s1600/1000054791.png') center/260px auto repeat;opacity:.38}
+#contact-form>.flex.flex-wrap.items-center.justify-center.gap-2.mt-1>*{position:relative;z-index:1}
+#contact-form>.flex.flex-wrap.items-center.justify-center.gap-2.mt-1 button{
+ background:var(--brand-primary,#ff6666)!important;color:#fff!important;border:1px solid rgba(255,255,255,.18)!important}
+#contact-form>.flex.flex-wrap.items-center.justify-center.gap-2.mt-1 button:hover{filter:brightness(1.06)}
 @media(min-width:640px){
- #contact-form > .flex.flex-wrap.items-center.justify-center.gap-2.mt-1{margin-left:-1.75rem!important;margin-right:-1.75rem!important;padding:16px 20px!important}
+ #contact-form>h3,#contact-form>h3+p{margin-left:-1.75rem!important;margin-right:-1.75rem!important;padding-left:1.75rem!important;padding-right:1.75rem!important}
+ #contact-form>h3{margin-top:-1.75rem!important}
+ #contact-form>.flex.flex-wrap.items-center.justify-center.gap-2.mt-1{margin-left:-1.75rem!important;margin-right:-1.75rem!important}
 }
 </style>
