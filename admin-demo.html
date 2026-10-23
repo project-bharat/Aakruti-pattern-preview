@@ -103,4 +103,22 @@ if(sessionStorage.getItem("aakruti-studio-auth")==="1")showStudio();
 #appShell form:after{content:"";display:block;height:22px;margin:20px -24px 0;background-color:#525266;background-image:linear-gradient(rgba(82,82,102,.42),rgba(82,82,102,.42)),url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipbgKB9qcZemLxw6r4SYsmyRSrWdgkKSLPGxTp_C8iS-5cD4-ailgMfK1IpGi6gFINB-SZz5fbXrzh-hIMKrex8ueh8d1jrIbRiFeprYTnB9lSujidWvKME8klIDHn5c1bHbd30-EylUvmiVtNCwWaDAfAFYtI7cfodF7tu4LjUqaeeSFVd7uVnSRWJ1Q/s1600/1000054793.png');background-size:auto,165px auto;background-repeat:repeat-x;background-position:center;opacity:1;pointer-events:none}
 #loginScreen form:after{display:none}
 </style>
+
+<style id="aakruti-admin-contrast-and-login-refinement">
+/* Existing slate and white only: make the motif visible without competing with form content. */
+#appShell .top,#appShell .footer,#loginScreen{
+ background-color:#525266!important;
+ background-image:linear-gradient(rgba(82,82,102,.08),rgba(82,82,102,.08)),url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgh-Nq8UCnodQv4H55oE5fJG0NL64r37m8OHCXutDeKN7_6XrDfrd3mWqtSB6opCLw6rfrdS6U6en5dpSq6TJNypieRR_YNDmjBYHTW7X8o2VWdjuw9GrW0O3CF5i2-Dl_QWpCUWFJuNSYCgkkEZUJBWmCUcjKekYi8bFfdppVhtkSylbmdc6JBw1u6Fq4/s1600/1000054791.png')!important;
+ background-size:auto,220px auto!important;background-repeat:repeat!important;background-blend-mode:normal!important
+}
+#loginScreen .login-card{width:min(410px,100%);text-align:center}
+#loginScreen .login-brand{width:100%;justify-content:center}
+#loginScreen .login-brand img{width:200px!important;max-width:100%;height:auto;object-fit:contain}
+#loginScreen form{text-align:left}
+#loginScreen form button[type="submit"]{display:block;width:200px!important;max-width:100%;margin:0 auto;padding:12px}
+#appShell form{position:relative;overflow:hidden;padding-bottom:0!important}
+#appShell form:after{content:"";display:block;height:22px;margin:20px -24px 0;background-color:#525266;background-image:linear-gradient(rgba(82,82,102,.12),rgba(82,82,102,.12)),url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipbgKB9qcZemLxw6r4SYsmyRSrWdgkKSLPGxTp_C8iS-5cD4-ailgMfK1IpGi6gFINB-SZz5fbXrzh-hIMKrex8ueh8d1jrIbRiFeprYTnB9lSujidWvKME8klIDHn5c1bHbd30-EylUvmiVtNCwWaDAfAFYtI7cfodF7tu4LjUqaeeSFVd7uVnSRWJ1Q/s1600/1000054793.png');background-size:auto,165px auto;background-repeat:repeat-x;background-position:center;opacity:1;pointer-events:none}
+#loginScreen form:after{display:none!important}
+</style>
+
 </body></html>
