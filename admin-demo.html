@@ -93,11 +93,14 @@ document.addEventListener("click",function(ev){const b=ev.target.closest('[data-
 if(sessionStorage.getItem("aakruti-studio-auth")==="1")showStudio();
 </script></div>
 <style id="pattern-visibility-refinement">
-/* Increase slate motif contrast on dark admin chrome; avoid a near-opaque overlay hiding it. */
-#appShell .top,#appShell .footer{background-color:#525266!important;background-image:linear-gradient(rgba(52,52,70,.40),rgba(52,52,70,.40)),url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgh-Nq8UCnodQv4H55oE5fJG0NL64r37m8OHCXutDeKN7_6XrDfrd3mWqtSB6opCLw6rfrdS6U6en5dpSq6TJNypieRR_YNDmjBYHTW7X8o2VWdjuw9GrW0O3CF5i2-Dl_QWpCUWFJuNSYCgkkEZUJBWmCUcjKekYi8bFfdppVhtkSylbmdc6JBw1u6Fq4/s1600/1000054791.png')!important;background-size:auto,190px auto!important;background-repeat:repeat!important;background-blend-mode:normal!important}
+/* Slate surfaces use the white motif for visible contrast. */
+#appShell .top,#appShell .footer,#loginScreen{background-color:#525266!important;background-image:linear-gradient(rgba(82,82,102,.16),rgba(82,82,102,.16)),url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipbgKB9qcZemLxw6r4SYsmyRSrWdgkKSLPGxTp_C8iS-5cD4-ailgMfK1IpGi6gFINB-SZz5fbXrzh-hIMKrex8ueh8d1jrIbRiFeprYTnB9lSujidWvKME8klIDHn5c1bHbd30-EylUvmiVtNCwWaDAfAFYtI7cfodF7tu4LjUqaeeSFVd7uVnSRWJ1Q/s1600/1000054793.png')!important;background-size:auto,180px auto!important;background-repeat:repeat!important;background-blend-mode:normal!important}
 #appShell .top{border-bottom:1px solid rgba(255,255,255,.32)!important}
 #appShell .footer{border-top:1px solid rgba(255,255,255,.28)!important}
-#loginScreen{background-color:#525266!important;background-image:linear-gradient(rgba(52,52,70,.42),rgba(52,52,70,.42)),url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgh-Nq8UCnodQv4H55oE5fJG0NL64r37m8OHCXutDeKN7_6XrDfrd3mWqtSB6opCLw6rfrdS6U6en5dpSq6TJNypieRR_YNDmjBYHTW7X8o2VWdjuw9GrW0O3CF5i2-Dl_QWpCUWFJuNSYCgkkEZUJBWmCUcjKekYi8bFfdppVhtkSylbmdc6JBw1u6Fq4/s1600/1000054791.png')!important;background-size:auto,190px auto!important;background-repeat:repeat!important}
 #appShell .top .brand-logo{filter:brightness(0) invert(1)!important;opacity:1!important}
+/* Slate-and-white patterned footer strip beneath form action buttons. */
+#appShell form{position:relative;overflow:hidden;padding-bottom:0!important}
+#appShell form:after{content:"";display:block;height:22px;margin:20px -24px 0;background-color:#525266;background-image:linear-gradient(rgba(82,82,102,.42),rgba(82,82,102,.42)),url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipbgKB9qcZemLxw6r4SYsmyRSrWdgkKSLPGxTp_C8iS-5cD4-ailgMfK1IpGi6gFINB-SZz5fbXrzh-hIMKrex8ueh8d1jrIbRiFeprYTnB9lSujidWvKME8klIDHn5c1bHbd30-EylUvmiVtNCwWaDAfAFYtI7cfodF7tu4LjUqaeeSFVd7uVnSRWJ1Q/s1600/1000054793.png');background-size:auto,165px auto;background-repeat:repeat-x;background-position:center;opacity:1;pointer-events:none}
+#loginScreen form:after{display:none}
 </style>
 </body></html>
