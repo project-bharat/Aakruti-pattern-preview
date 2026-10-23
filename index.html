@@ -925,3 +925,41 @@ section:not(.hero):not(#services):after{background-color:var(--brand-primary)!im
 
 </body>
 </html>
+
+
+<style id="aakruti-pattern-refinement-2">
+/* A softer white motif that sits visually beneath foreground content. */
+.hero{isolation:isolate}
+.hero:before{
+ z-index:0!important;opacity:.12!important;mix-blend-mode:screen!important;
+ -webkit-mask-image:linear-gradient(to bottom,transparent 18%,rgba(0,0,0,.25) 43%,#000 100%);
+ mask-image:linear-gradient(to bottom,transparent 18%,rgba(0,0,0,.25) 43%,#000 100%);
+}
+.hero>*{position:relative;z-index:1}
+#product-grid .specification-panel{position:relative;isolation:isolate;background:#525266!important}
+#product-grid .specification-panel:before{
+ content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+ background:url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgh-Nq8UCnodQv4H55oE5fJG0NL64r37m8OHCXutDeKN7_6XrDfrd3mWqtSB6opCLw6rfrdS6U6en5dpSq6TJNypieRR_YNDmjBYHTW7X8o2VWdjuw9GrW0O3CF5i2-Dl_QWpCUWFJuNSYCgkkEZUJBWmCUcjKekYi8bFfdppVhtkSylbmdc6JBw1u6Fq4/s1600/1000054791.png') center/155px auto repeat;
+ opacity:.13;
+}
+#product-grid .specification-panel .specification-heading,
+#product-grid .specification-panel .specification-details,
+#product-grid .specification-panel .specification-note{position:relative;z-index:1}
+#product-grid .specification-panel .specification-details,
+#product-grid .specification-panel .specification-note{background:rgba(240,235,231,.94)!important}
+#contact-form > .flex.flex-wrap.items-center.justify-center.gap-2.mt-1{
+ position:relative;isolation:isolate;overflow:hidden;
+ margin:1.1rem -1rem -0.2rem!important;padding:15px 12px!important;
+ border-radius:0 0 10px 10px;background:#525266!important;
+ border-top:1px solid rgba(255,255,255,.14);
+}
+#contact-form > .flex.flex-wrap.items-center.justify-center.gap-2.mt-1:before{
+ content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+ background:url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgh-Nq8UCnodQv4H55oE5fJG0NL64r37m8OHCXutDeKN7_6XrDfrd3mWqtSB6opCLw6rfrdS6U6en5dpSq6TJNypieRR_YNDmjBYHTW7X8o2VWdjuw9GrW0O3CF5i2-Dl_QWpCUWFJuNSYCgkkEZUJBWmCUcjKekYi8bFfdppVhtkSylbmdc6JBw1u6Fq4/s1600/1000054791.png') center/155px auto repeat;
+ opacity:.13;
+}
+#contact-form > .flex.flex-wrap.items-center.justify-center.gap-2.mt-1>*{position:relative;z-index:1}
+@media(min-width:640px){
+ #contact-form > .flex.flex-wrap.items-center.justify-center.gap-2.mt-1{margin-left:-1.75rem!important;margin-right:-1.75rem!important;padding:16px 20px!important}
+}
+</style>
